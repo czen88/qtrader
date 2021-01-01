@@ -18,22 +18,22 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t mythicalmysfits/service:latest .
+      - docker build -t qtrader/service:latest .
       # Tag the built docker image using the appropriate Amazon ECR endpoint and relevant
       # repository for our service container. This ensures that when the docker push
       # command is executed later, it will be pushed to the appropriate repository.
-      - docker tag mythicalmysfits/service:latest $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/mythicalmysfits/service:latest
+      - docker tag qtrader/service:latest $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/qtrader/service:latest
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image..
       # Push the image to ECR.
-      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/mythicalmysfits/service:latest
+      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/qtrader/service:latest
       - echo Completed pushing Docker image. Deploying Docker image to AWS Fargate on `date`
       # Create a artifacts file that contains the name and location of the image
       # pushed to ECR. This will be used by AWS CodePipeline to automate
       # deployment of this specific container to Amazon ECS.
-      - printf '[{"name":"MythicalMysfits-Service","imageUri":"%s"}]' $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/mythicalmysfits/service:latest > imagedefinitions.json
+      - printf '[{"name":"QTrader-Service","imageUri":"%s"}]' $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/qtrader/service:latest > imagedefinitions.json
 artifacts:
   # Indicate that the created imagedefinitions.json file created on the previous
   # line is to be referenceable as an artifact of the build execution job.
