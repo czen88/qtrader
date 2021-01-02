@@ -1,4 +1,7 @@
-FROM tensorflow/tensorflow:latest-py3
+FROM ubuntu:latest
+RUN apt-get update -y
+RUN apt-get install -y python3-pip python3-dev build-essential curl
+RUN pip3 install --upgrade pip
 
 # Install TA-lib
 RUN curl -L http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz | \
@@ -17,11 +20,11 @@ WORKDIR /q-trader
 
 # Install any needed packages specified in requirements.txt
 COPY requirements.txt /q-trader
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt --no-cache-dir
+RUN pip3 install -r ./requirements.txt --no-cache-dir
 
-# Copy the current directory contents into the container at /app
+# Copy the current directory contents into the container
 COPY . /q-trader
 
+ENTRYPOINT ["python3"]
 # Run app.py when the container launches
-CMD ["python", "service.py"]
+CMD ["service.py"]

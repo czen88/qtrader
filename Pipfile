@@ -5,22 +5,22 @@ verify_ssl = true
 
 [dev-packages]
 jupyter = "*"
+hyperopt = "*"
+fbprophet = "*"
 
 [packages]
-pandas = "*"
-matplotlib = "==3.1.0"
+pandas = "==1.1.5"
+matplotlib = "*"
 requests = "==2.22.0"
 ccxt = "*"
 tensorflow = "==2.3.1"
-scikit-learn = "==0.21.3"
+scikit-learn = "*"
 python-telegram-bot = "==11.1.0"
 TA-Lib = "==0.4.17"
 Quandl = "*"
 pandas-datareader = "*"
 flatlib = "*"
 pyswisseph = "==2.00.00-2"
-hyperopt = "*"
-fbprophet = "*"
 boto3 = "*"
 flask = "*"
 flask-cors = "*"
