@@ -1,0 +1,36 @@
+p.feature_list = [
+    'DR',
+    'ADR',
+    'moon_lon_sin',
+    'moon_lon_cos'
+]
+
+Epoch 00026: val_loss improved from 0.00473 to 0.00473, saving model to data/ETHUSDNN2/model.nn
+
+Test:
+Strategy Return: 2.40
+Market Return: 0.79
+Sortino Ratio: 2.96
+Bars in Trade: 4
+Buy Pct: 0.50
+Accuracy: 0.56
+Win Ratio: 0.57
+Avg Win: 0.04
+Avg Loss: 0.02
+Risk to Reward: 1.67
+Expectancy: 1.08
+Sharpe Ratio: 1.65
+
+All:
+Strategy Return: 4178.71
+Market Return: 163.76
+Sortino Ratio: 3.87
+Bars in Trade: 4
+Buy Pct: 0.54
+Accuracy: 0.56
+Win Ratio: 0.61
+Avg Win: 0.06
+Avg Loss: 0.03
+Risk to Reward: 2.21
+Expectancy: 2.55
+Sharpe Ratio: 2.17

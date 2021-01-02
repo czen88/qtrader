@@ -1,0 +1,58 @@
+p.feature_list = [
+    'DR',
+    'ADR',
+    'moon_lon_sin',
+    'moon_lon_cos'
+]
+
+p.datasource = 'cc'
+p.train_pct = 0.8
+p.test_pct = 0.2
+p.epochs = 30
+p.batch_size = 100
+{'adr_period': 19.0}
+
+Test:
+Strategy Return: 3.84
+Market Return: 1.91
+Sortino Ratio: 4.14
+Bars in Trade: 3
+Buy Pct: 0.53
+Accuracy: 0.57
+Win Ratio: 0.59
+Avg Win: 0.04
+Avg Loss: 0.02
+Risk to Reward: 1.76
+Expectancy: 1.59
+Sharpe Ratio: 2.24
+Average Daily Return: 0.004
+
+All:
+Strategy Return: 12149.37
+Market Return: 271.32
+Sortino Ratio: 4.10
+Bars in Trade: 4
+Buy Pct: 0.58
+Accuracy: 0.57
+Win Ratio: 0.62
+Avg Win: 0.07
+Avg Loss: 0.03
+Risk to Reward: 2.19
+Expectancy: 3.10
+Sharpe Ratio: 2.29
+Average Daily Return: 0.008
+
+Kraken:
+Strategy Return: 5.74
+Market Return: 1.97
+Sortino Ratio: 2.60
+Bars in Trade: 4
+Buy Pct: 0.54
+Accuracy: 0.57
+Win Ratio: 0.60
+Avg Win: 0.04
+Avg Loss: 0.03
+Risk to Reward: 1.35
+Expectancy: 1.16
+Sharpe Ratio: 1.61
+Average Daily Return: 0.003

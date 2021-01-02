@@ -1,0 +1,17 @@
+13/04/20: Epoch: 80 (approx), batch size 100, train 0.8, test 0.2, CC data
+
+Strategy Return: 6.61
+Market Return: 1.13
+Sortino Ratio: 4.74
+Bars in Trade: 5
+Buy Pct: 0.15
+Accuracy: 0.53
+Win Ratio: 0.57
+Avg Win: 0.04
+Avg Loss: 0.01
+Risk to Reward: 3.34
+Expectancy: 1.39
+Sharpe Ratio: 2.29
+Average Daily Return: 0.004
+SL: 0.01 TP: 0.00
+ETH/USD: Same Signal: Cash Open: 207.23

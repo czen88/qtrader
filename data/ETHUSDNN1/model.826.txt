@@ -1,0 +1,51 @@
+Date: 25/10/20
+Epochs: 200
+Batch size: 100
+Train 0.8
+Test 0.2
+Data: CC
+
+Test Performance:
+Strategy Return: 3.36
+Market Return: 2.20
+Sortino Ratio: 3.88
+Bars in Trade: 4
+Buy Pct: 0.59
+Accuracy: 0.52
+Win Ratio: 0.51
+Avg Win: 0.06
+Avg Loss: 0.02
+Risk to Reward: 2.47
+Expectancy: 1.59
+Sharpe Ratio: 2.12
+Average Daily Return: 0.004
+
+All Data:
+Strategy Return: 1038116.85
+Market Return: 473.47
+Sortino Ratio: 8.26
+Bars in Trade: 3
+Buy Pct: 0.54
+Accuracy: 0.58
+Win Ratio: 0.60
+Avg Win: 0.07
+Avg Loss: 0.02
+Risk to Reward: 3.62
+Expectancy: 3.66
+Sharpe Ratio: 3.63
+Average Daily Return: 0.010
+
+KRAKEN:
+Strategy Return: 5.11
+Market Return: 2.97
+Sortino Ratio: 3.31
+Bars in Trade: 4
+Buy Pct: 0.52
+Accuracy: 0.53
+Win Ratio: 0.51
+Avg Win: 0.04
+Avg Loss: 0.02
+Risk to Reward: 2.14
+Expectancy: 1.23
+Sharpe Ratio: 1.84
+Average Daily Return: 0.003

@@ -1,0 +1,29 @@
+Kraken Data
+Strategy Return: 6.96
+Market Return: 3.08
+Sortino Ratio: 3.47
+Bars in Trade: 4
+Buy Pct: 0.63
+Accuracy: 0.53
+Win Ratio: 0.57
+Avg Win: 0.05
+Avg Loss: 0.03
+Risk to Reward: 1.84
+Expectancy: 1.50
+Sharpe Ratio: 1.99
+Average Daily Return: 0.004
+
+All Data:
+Strategy Return: 169263.80
+Market Return: 517.96
+Sortino Ratio: 5.67
+Bars in Trade: 4
+Buy Pct: 0.64
+Accuracy: 0.57
+Win Ratio: 0.61
+Avg Win: 0.09
+Avg Loss: 0.03
+Risk to Reward: 3.64
+Expectancy: 4.56
+Sharpe Ratio: 2.98
+Average Daily Return: 0.012
