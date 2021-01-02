@@ -22,6 +22,8 @@ pyswisseph = "==2.00.00-2"
 hyperopt = "*"
 fbprophet = "*"
 boto3 = "*"
+flask = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.7"

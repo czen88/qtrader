@@ -24,4 +24,4 @@ RUN pip install -r requirements.txt --no-cache-dir
 COPY . /q-trader
 
 # Run app.py when the container launches
-CMD ["python", "bot.py"]
+CMD ["python", "service.py"]
