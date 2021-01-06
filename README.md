@@ -30,9 +30,9 @@ export AWS_REGION=You AWS  Region
 # Build and deploy Docker image to AWS ECR
 ./deploy.sh
 
-# Connect Jupyter environment to pipenv kernel:
+# Register environment as a Jupyter kernel
 ```
-python -m ipykernel install --user --display-name qtrader --name qtrader
+ipython kernel install --name "q-trader-aws" --user
 ```
 
 # Start Jupyter Notebook:
