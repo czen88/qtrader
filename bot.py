@@ -111,7 +111,7 @@ try:
     run('ETHBTCROC', live=True)
 
     send('*** Combo Model *** ', True)
-    run('ETHUSDENS')
+    run('ETHUSDENS', live=True)
 
     send('*** Risk Model *** ', True)
     run('ETHUSDNN1')
