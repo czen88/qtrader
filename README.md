@@ -44,6 +44,7 @@ jupyter notebook
 + Migrate to AWS CodeCommit: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html
 
 ****************************** Improvement Ideas *********************************************
++ Uniswap Tutorial: https://azfuller20.medium.com/swap-with-uniswap-wip-f15923349b3d
 + Prophet Pilot
 + Hourly Trade Execution
 + Find key months / days of week for price rise

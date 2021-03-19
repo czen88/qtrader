@@ -107,8 +107,11 @@ def test_execute():
 # Trading
 try:
     t.init()
+    send('*** Maxi Model *** ', True)
+    run('ETHBTCROC', live=True)
+
     send('*** Combo Model *** ', True)
-    run('ETHUSDENS', live=True)
+    run('ETHUSDENS')
 
     send('*** Risk Model *** ', True)
     run('ETHUSDNN1')

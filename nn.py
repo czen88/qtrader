@@ -345,7 +345,7 @@ def runNN3():
     ds['ROC'] = talib.ROC(ds['close'].values, timeperiod=p.roc_period)
 
     ds['y_pred_val'] = np.where(ds.ROC > p.roc_threshold, 1, 0)
-    # Delay signal for 1 day
+    # Delay signal for 1 + signal delay days
     ds['y_pred_val'] = ds['y_pred_val'].shift(p.signal_delay+1)
     ds = gen_signal(ds, ds['y_pred_val'])
 
@@ -417,3 +417,5 @@ def get_perf_diff():
 # td3 = td2[td2.date.isin(td1[td1.signal == 'Sell'].date)]
 
 # get_perf_diff()
+
+# runModel('ETHBTCROC')

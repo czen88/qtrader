@@ -247,6 +247,7 @@ def load_config(config):
         epochs = 20
         signal_threshold = 1
     elif conf == 'ETHBTCNN':
+        datasource = 'cc'
         feature_list = ['MA','MA2']
         reload = True
 #        train = True
@@ -382,6 +383,18 @@ def load_config(config):
         adjust_signal = False
         # models = ['ETHUSDNN1', 'ETHUSDNN1S', 'ETHUSDNN2']  # Best on full data, great at bear market, but overfit!
         models = ['ETHUSDNN1', 'ETHUSDNN2', 'ETHUSDROC']  # Best in last 720 days, less overfit
+    elif conf == 'ETHBTCROC':
+        min_equity = 0.02
+        order_precision = 0
+        model_type = 'runNN3'
+        reload = True
+        adjust_signal = False
+        limit_fee = 0.002
+        market_fee = 0.004
+        order_type = 'market'
+        roc_period = 16
+        roc_threshold = 11
+        signal_delay = 6
 
     if order_type == 'market':
         limit_fee = market_fee
