@@ -1,11 +1,67 @@
-pandas==0.25.0
+-i https://pypi.org/simple
+absl-py==0.12.0
+aiodns==2.0.0 ; python_version >= '3.5.2'
+aiohttp==3.7.4.post0 ; python_version >= '3.5.2'
+astunparse==1.6.3
+async-timeout==3.0.1
+attrs==20.3.0
+boto3==1.17.32
+botocore==1.20.32
+cachetools==4.2.1
+ccxt==1.43.77
+certifi==2020.12.5
+cffi==1.14.5
+chardet==3.0.4
+cryptography==3.4.6
+cycler==0.10.0
+flatlib==0.2.1
+future==0.18.2
+gast==0.3.3
+google-auth-oauthlib==0.4.3
+google-auth==1.28.0
+google-pasta==0.2.0
+grpcio==1.36.1
+h5py==2.10.0
+idna==2.8
+importlib-metadata==3.7.3 ; python_version < '3.8'
+jmespath==0.10.0
+joblib==1.0.1
+keras-preprocessing==1.1.2
+kiwisolver==1.3.1
+markdown==3.3.4
 matplotlib==3.1.0
-requests==2.22.0
-ccxt
-tensorflow==2.3.1
-scikit-learn==0.21.3
+multidict==5.1.0
+numpy==1.18.5
+oauthlib==3.1.0
+opt-einsum==3.3.0
+pandas==0.25.0
+protobuf==3.15.6
+pyasn1-modules==0.2.8
+pyasn1==0.4.8
+pycares==3.1.1
+pycparser==2.20
+pyparsing==2.4.7
+pyswisseph==2.0.0.post2
+python-dateutil==2.8.1
 python-telegram-bot==11.1.0
-TA-Lib==0.4.17
-flatlib
-pyswisseph==2.00.00-2
-boto3
+pytz==2021.1
+requests-oauthlib==1.3.0
+requests==2.22.0
+rsa==4.7.2 ; python_version >= '3.6'
+s3transfer==0.3.6
+scikit-learn==0.21.3
+scipy==1.6.1
+six==1.15.0
+ta-lib==0.4.17
+tensorboard-plugin-wit==1.8.0
+tensorboard==2.4.1
+tensorflow-estimator==2.3.0
+tensorflow==2.3.1
+termcolor==1.1.0
+typing-extensions==3.7.4.3 ; python_version < '3.8'
+urllib3==1.25.11
+werkzeug==1.0.1
+wheel==0.36.2 ; python_version >= '3'
+wrapt==1.12.1
+yarl==1.1.0 ; python_version >= '3.5.2'
+zipp==3.4.1
