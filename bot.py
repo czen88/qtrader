@@ -87,7 +87,6 @@ def run(conf, live=False):
             send(e)
             time.sleep(p.sleep_interval)
         except ex.InsufficientFunds:
-            send('Not enough funds to open position')
             done = True
 
         
