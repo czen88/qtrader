@@ -3,13 +3,14 @@ pipenv lock --requirements > requirements.txt
 
 IMAGE=$(aws sts get-caller-identity --query Account --output text).dkr.ecr.$(aws configure get region).amazonaws.com/qtrader/service:latest
 
-# Remove old images
+# Remove old images.
+# TODO: clean properly
 docker image prune -f
 
 # Build Docker Image
 docker build -t $IMAGE .
 
-#Test Docker Locally:
+#Test Docker Locally. Do not forget to delete old images first!
 #docker-compose up
 
 # Login to ECR via Docker

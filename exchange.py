@@ -18,6 +18,10 @@ import params as p
 import mysecrets as s
 
 
+class InsufficientFunds(Exception):
+    pass
+
+
 class Exchange:
     """
     Executes Market Order on exchange
@@ -137,7 +141,7 @@ class Exchange:
         res = {}
         amount = self.get_order_size(action, price)
         if amount == 0:
-            raise Exception('Not enough funds to open position')
+            raise InsufficientFunds('Not enough funds to open position')
         lot = amount
         side = action.lower()
 

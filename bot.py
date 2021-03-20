@@ -82,10 +82,13 @@ def run(conf, live=False):
             if live:
                 execute(s)
             done = True
-        except ccxt.NetworkError as e:
+        except ccxt.NetworkError:
             send('Network Error has occurred. Retrying ...')
             send(e)
             time.sleep(p.sleep_interval)
+        except ex.InsufficientFunds:
+            send('Not enough funds to open position')
+            done = True
 
         
 def test_execute():
@@ -110,8 +113,13 @@ try:
     send('*** Maxi Model *** ', True)
     run('ETHBTCROC', live=True)
 
+    # TODO: Use 'ETHUSDENS' and 'BTCUSDROC' to exit/enter ETHBTC trade
+    # 1: Identify ETHBTC position (BTC or ETH)
+    # 2: If ETH -> use ETHUSD Combo model
+    # 3: If BTC -> use BTCUSD ROC model (tune it before use)
+
     send('*** Combo Model *** ', True)
-    run('ETHUSDENS')
+    run('ETHUSDENS', live=True)
 
     send('*** Risk Model *** ', True)
     run('ETHUSDNN1')
