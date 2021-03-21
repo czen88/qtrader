@@ -44,6 +44,11 @@ jupyter notebook
 + Migrate to AWS CodeCommit: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html
 
 ****************************** Improvement Ideas *********************************************
+Use 'ETHBTCROC', 'ETHUSDENS' and 'BTCUSDROC' to trade ETH/BTC/USD:
++ 1: Identify ETHBTC position (BTC or ETH)
++ 2: If ETH -> use ETHUSD Combo model
++ 3: If BTC -> use BTCUSD ROC model (tune it before use)
+
 + Uniswap Tutorial: https://azfuller20.medium.com/swap-with-uniswap-wip-f15923349b3d
 + Prophet Pilot
 + Hourly Trade Execution

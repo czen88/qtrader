@@ -87,6 +87,7 @@ def run(conf, live=False):
             send(e)
             time.sleep(p.sleep_interval)
         except ex.InsufficientFunds:
+            # Ignoring Insufficient Funds as it may happen often when trading BTC-ETH-USD strategy
             done = True
 
         
@@ -109,13 +110,6 @@ def test_execute():
 # Trading
 try:
     t.init()
-    send('*** Maxi Model *** ', True)
-    run('ETHBTCROC', live=True)
-
-    # TODO: Use 'ETHUSDENS' and 'BTCUSDROC' to exit/enter ETHBTC trade
-    # 1: Identify ETHBTC position (BTC or ETH)
-    # 2: If ETH -> use ETHUSD Combo model
-    # 3: If BTC -> use BTCUSD ROC model (tune it before use)
 
     send('*** Combo Model *** ', True)
     run('ETHUSDENS', live=True)
@@ -127,6 +121,7 @@ try:
     run('ETHUSDNN2')
 
     send('*** Rock Model *** ', True)
+    run('ETHBTCROC')
     run('ETHUSDROC')
     run('BTCUSDROC')
 except Exception as e:
