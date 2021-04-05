@@ -117,13 +117,14 @@ try:
     send('*** Risk Model *** ', True)
     run('ETHUSDNN1')
 
-    send('*** Moon Model *** ', True)
-    run('ETHUSDNN2')
-
     send('*** Rock Model *** ', True)
     run('ETHBTCROC')
     run('ETHUSDROC')
     run('BTCUSDROC')
+
+    send('*** Moon Model *** ', True)
+    run('ETHUSDNN2')
+
 except Exception as e:
     send('An error has occurred. Please investigate!')
     send(e)

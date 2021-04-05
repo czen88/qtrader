@@ -382,7 +382,7 @@ def load_config(config):
         signal_threshold = 0.5
         adjust_signal = False
         # models = ['ETHUSDNN1', 'ETHUSDNN1S', 'ETHUSDNN2']  # Best on full data, great at bear market, but overfit!
-        models = ['ETHUSDNN1', 'ETHUSDNN2', 'ETHUSDROC']  # Best in last 720 days, less overfit
+        models = ['ETHUSDNN1', 'ETHUSDROC']  # Best in last 720 days
     elif conf == 'ETHBTCROC':
         min_equity = 0.02
         order_precision = 0
