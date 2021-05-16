@@ -122,9 +122,6 @@ try:
     run('ETHUSDROC')
     run('BTCUSDROC')
 
-    send('*** Moon Model *** ', True)
-    run('ETHUSDNN2')
-
 except Exception as e:
     send('An error has occurred. Please investigate!')
     send(e)
