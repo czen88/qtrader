@@ -44,6 +44,17 @@ jupyter notebook
 + Migrate to AWS CodeCommit: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html
 
 ****************************** Improvement Ideas *********************************************
++ Create ECS using Python CDK
++ Create CI/CD using Python CDK
+  + CodeBuild Pilot: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-docker.html  
+
++ Prophet Pilot
+  + Find key months / days of week for price rise
++ TokenSets: https://www.tokensets.com/  
++ Hourly Trade Execution
++ Trade BTC while ETH signal is Sell
++ Do not trade during solar eclipse (+- days)
+
 Use 'ETHBTCROC', 'ETHUSDENS' and 'BTCUSDROC' to trade ETH/BTC/USD:
 + 1: Identify ETHBTC position (BTC or ETH)
 + 2: If ETH -> use ETHUSD Combo model
@@ -365,6 +376,9 @@ https://hackernoon.com/tips-to-reduce-docker-image-sizes-876095da3b34
 # Converge Criteria: best result is not improved after n epochs (n is another parameter)
 
 # ********************** Useful Links ************************************
+Parameter Store
+https://medium.com/@nqbao/how-to-use-aws-ssm-parameter-store-easily-in-python-94fda04fea84
+
 An implementation of Q-learning applied to (short-term) stock trading
 https://github.com/edwardhdlu/q-trader
 
@@ -500,3 +514,12 @@ Only Test Results can be trusted
 ECS Task is stuck in running state. AWS CloudWatch logs are incomplete
 This can be caused by error in Python when process exits quickly so logs are not captured.
 https://stackoverflow.com/questions/54656906/docker-container-on-aws-ecs-exits-before-all-the-logs-are-printed-to-cloudwatch
+
+# Key Milestones
++ 2016-12-22 20:47: Enrolled for Machine Learning for Trading on Udacity: https://classroom.udacity.com/courses/ud501
++ 2017-08-05 22:32: First Python script: q-trader.py
++ 2017-11-30 17:58: Telegram bot was created
++ 2018-11-03 15:07: Created ECS Cluster 
++ 2018-11-03 22:19: First automated trade (buy 0.1 ETH)
++ 2018-11-06 00:37: First run in AWS ECS
++ 2020-12-22 12:00: New AWS architecture start

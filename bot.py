@@ -112,7 +112,8 @@ try:
     t.init()
 
     send('*** Combo Model *** ', True)
-    run('ETHUSDENS', live=True)
+    # run('ETHUSDENS', live=True)
+    run('ETHUSDENS')
 
     send('*** Risk Model *** ', True)
     run('ETHUSDNN1')

@@ -1,6 +1,3 @@
-# Generate Requirements
-pipenv lock --requirements > requirements.txt
-
 IMAGE=$(aws sts get-caller-identity --query Account --output text).dkr.ecr.$(aws configure get region).amazonaws.com/qtrader/service:latest
 
 # Remove old images.
@@ -13,9 +10,11 @@ docker build -t $IMAGE .
 #Test Docker Locally. Do not forget to delete old images first!
 #docker-compose up
 
-# Login to ECR via Docker
-# See https://aws.amazon.com/blogs/compute/a-guide-to-locally-testing-containers-with-amazon-ecs-local-endpoints-and-docker-compose/
-$(aws ecr get-login --no-include-email --region $AWS_REGION)
+# Login to ECR with Docker
+aws ecr get-login-password --region $AWS_REGION \
+| docker login \
+    --username AWS \
+    --password-stdin 266976398848.dkr.ecr.$AWS_REGION.amazonaws.com
 
 # Push Docker Image to ECR
 docker push $IMAGE
