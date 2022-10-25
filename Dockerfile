@@ -1,4 +1,4 @@
-FROM python:3.7-stretch
+FROM python:3.8.0b1-stretch
 RUN apt-get update -y
 RUN pip install --upgrade pip
 
